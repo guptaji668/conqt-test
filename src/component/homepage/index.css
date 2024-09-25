@@ -1,0 +1,16 @@
+.select-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkbox{
+    gap: 20px;
+    display: flex;
+    flex-direction: row;
+  
+}
+
+.checkbox-input{
+    gap: 20px;
+}

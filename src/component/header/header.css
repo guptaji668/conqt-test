@@ -1,0 +1,50 @@
+.header{
+    background-color: #007AFF;
+    max-height: 80px;
+    height: 80px;
+    padding: 20px;
+    display: flex;
+    width: 100vw;
+    gap: 20;
+   box-shadow: 0px 0px 6px 0px #0000001F;
+   display: flex;
+   justify-content: space-between;
+    
+
+}
+
+.left-item{
+   display: flex;
+   flex-direction: row;
+   gap: 20px;
+
+
+}
+.left-item .topbar-img{
+    width: 40px;
+height: 40px;
+gap: 0px;
+border-radius: 100px;
+background-color: #ffffff;
+
+
+}
+.left-item h1{
+
+font-size: 28px;
+font-weight: 500;
+line-height: 36px;
+text-align: left;
+color: #ffffff
+
+}
+.right-item{
+    color: #ffffff;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: left;
+    
+
+}
