@@ -1,10 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Header from '../header/header'
 import "./index.css"
 import ItemDetails from '../itemDetails'
+import Supplier from '../supplier/supplier'
+import RecordTable from '../Table/Table'
 
-export default function HomePage
-() {
+export default function HomePage() {
+
+  const [checkbox ,setCheckbox]=useState("item")
+
   return (
     <div>
       
@@ -13,12 +17,12 @@ export default function HomePage
         <div className='select-box'>
         <div className='checkbox'>
             <div className='checkbox-input'>
-            <input type='checkbox' id="item"  />   Item 
+            <input type='checkbox' id="item" name="item"  checked={checkbox ==="item"} onChange={()=>setCheckbox("item")}   />   Item 
             </div>
 
             <div className='checkbox-input'>
 
-            <input type='checkbox' id="Supplier" />  Supplier
+            <input type='checkbox' id="supplier" name="supplier" checked={checkbox==="supplier"} onChange={()=>setCheckbox("supplier")} />  Supplier
 
             </div>
 
@@ -27,9 +31,20 @@ export default function HomePage
         </div>
       
         
-        <div className='mt-5 container'>
+        <div className='container mt-5'>
 
-        <ItemDetails/>
+          {
+           checkbox==="item" && (<ItemDetails/>) 
+          }
+          {
+            checkbox ==="supplier" && (<Supplier/>) 
+          }
+
+        </div>
+
+        <div className='mt-5'>
+          <RecordTable/>
+
         </div>
 
      

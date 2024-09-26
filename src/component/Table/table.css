@@ -1,0 +1,39 @@
+.table-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+table{
+    width: 80Vw;
+    padding: 20px;
+    border: 1px solid #E4E7EC;
+    text-align: center;
+    
+
+}
+
+tr th{
+    padding: 15px;
+    border-bottom: 1px solid #E4E7EC;
+    text-align: center;
+
+}
+
+
+td{
+  
+    padding: 15px;
+    border-bottom: 1px solid #E4E7EC;
+    text-align: center
+}
+
+.even{
+    background-color: #E4E7EC;
+   
+}
+.odd{
+    background-color: #ffffff;
+
+}
